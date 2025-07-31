@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChoPify</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="utility.css" />
+  <link rel="icon" type="image/x-icon" href="resources/favicon.ico">
+
+</head>
+
+<body>
+  <div class="container flex bg-black">
+
+    <!-- Left Container -->
+    <div class="left bg-black">
+
+      <!-- Home Section -->
+      <div class="home bg-grey rounded p-1">
+        <div class="logo flex items-center"><img src="resources/logo.svg" alt="logo" class="invert m-1">ChoPify</div>
+        <ul>
+          <li><img src="resources/home.svg" alt="home" class="invert">Home</li>
+          <li><img src="resources/search.svg" alt="search" class="invert">Search</li>
+        </ul>
+      </div>
+
+      <!--Library Section -->
+      <div class="library bg-grey rounded m-1 items-center">
+        <div class="heading m-1 p-1">
+          <img src="resources/playlist.svg" class="invert" alt="Your Library">
+          <h2>Your Library</h2>
+        </div>
+
+        <!-- song lists -->
+        <div class="songList">
+          <ul>
+            <!-- <li>
+              <img class="invert" src="resources\music.svg" alt="">
+              <div class="info">
+                <div>Song Name</div>
+                <div>Song Artist</div>
+              </div>
+              <div class="playNow">
+                <span>Play Now</span>
+              <img class="invert" src="resources\play.svg" style="height: 30px; width: 30px;">
+              </div>
+            </li> -->
+          </ul>
+        </div>
+
+        <!-- Footer Links -->
+        <footer class="footer">
+          <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+          <div><a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety & Privacy Center</span></a></div>
+          <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a></div>
+          <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></div>
+          <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+          <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
+        </footer>
+
+      </div>
+
+    </div>
+
+
+    <!-- Right Container -->
+    <div class="right bg-gradient rounded p-1">
+
+      <!-- Navbar -->
+      <div class="header">
+        <div class="nav-btns">
+          <svg xmlns="http://www.w3.org/2000/svg" class="pointer" viewBox="0 0 24 24" width="24" height="24"
+            color="#fffff" fill="none">
+            <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor"
+              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="pointer" viewBox="0 0 24 24" width="24" height="24"
+            color="#fffff" fill="none">
+            <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
+              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+        <div class="buttons">
+          <button>Sign Up</button>
+          <button>Login</button>
+        </div>
+      </div>
+
+      <!-- Playlist Section -->
+      <div class="spotifyPlaylists">
+
+        <h1>Trending Songs</h1>
+
+        <div class="cardContainer">
+
+          <!-- // card 1 -->
+          <div class="card pointer" data-folder="bollywood">
+            <div class="img-wrapper">
+              <img src="https://mosaic.scdn.co/640/ab67616d00001e02232bade47d843bb107ec169fab67616d00001e026cfc57e5358c5e39e79bccbdab67616d00001e0273b9b3765767e6f45db94b61ab67616d00001e02e7bc15738713afbb4b18657e" alt="">
+
+              <div class="play-button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="25" height="25">
+                  <path d="M5 3v18l15-9L5 3z" />
+                </svg>
+              </div>
+            </div>
+
+            <h2 class="f-1 und">Bollywood Chill</h2>
+            <p class="f-2 und">Shreya Ghoshal, Ankit Tiwari, KK, Harshit Saxena...</p>
+          </div>
+          
+          <!-- // card 2 -->
+          <div class="card pointer" data-folder="hollywood">
+            <div class="img-wrapper">
+              <img src="https://mosaic.scdn.co/640/ab67616d00001e026a937d2ae490ad54992de096ab67616d00001e0284951526e49a65318d53809aab67616d00001e02881d8d8378cd01099babcd44ab67616d00001e028b660b58d947c1d666d635c0" alt="">
+
+              <div class="play-button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="25" height="25">
+                  <path d="M5 3v18l15-9L5 3z" />
+                </svg>
+              </div>
+            </div>
+
+            <h2 class="f-1 und">Hollywood Cool</h2>
+            <p class="f-2 und">Travis Scott, Playboi carti, Charlie Puth, The Weekend...</p>
+          </div>
+
+
+          <!-- // card 3 -->
+          <div class="card pointer" data-folder="currents">
+            <div class="img-wrapper">
+              <img src="	https://i.scdn.co/image/ab67616d00001e029e1cfc756886ac782e363d79" alt="">
+
+              <div class="play-button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="25" height="25">
+                  <path d="M5 3v18l15-9L5 3z" />
+                </svg>
+              </div>
+            </div>
+
+            <h2 class="f-1 und">Currents</h2>
+            <p class="f-2 und">2015 ● Tame Impala...</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="playBar">
+      <div class="seekBar">
+        <div class="progress"></div>
+        <div class="circle">
+
+        </div>
+      </div>
+      <div class="songInfo"></div>
+      <div class="songBtns">
+        <img class="prev pointer" src="resources\previous.svg" alt="">
+        <img class="play pointer" src="resources\play.svg" alt="">
+        <img class="next pointer" src="resources\forward.svg" alt="">
+      </div>
+      <div class="songTime">
+        <div class="firstTime"></div>
+        <div class="lastTime"></div>
+      </div>
+
+      <div class="volumeControl">
+        <img src="resources/volume.svg" class="volumeIcon" id="volumeIcon">
+        <input type="range" min="0" max="1" step="0.01" class="volumeSlider pointer" id="volumeSlider">
+      </div>
+
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
