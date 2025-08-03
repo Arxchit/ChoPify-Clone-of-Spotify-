@@ -83,7 +83,7 @@ const playMusic = (track, pause = false) => {
     }
 
     isPlaying = true;
-
+    currentIndex = songs.indexOf(track);
     currentSong = audio;
     document.querySelector('.songInfo').innerHTML = `
   <img src="resources/music.svg" style="width:35px; height:35px; filter:invert(1); margin-right:10px; vertical-align:middle;">
@@ -166,6 +166,11 @@ async function main() {
         currentIndex = (currentIndex + 1) % songs.length;
         playMusic(songs[currentIndex]);
     });
+    audio.addEventListener('ended', ()=> {
+         if (songs.length === 0) return;
+        currentIndex = (currentIndex + 1) % songs.length;
+        playMusic(songs[currentIndex]);
+    })
 
     // Previous
     document.querySelector('.prev').addEventListener('click', () => {
